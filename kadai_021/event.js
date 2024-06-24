@@ -5,8 +5,11 @@ const clickBtn = document.getElementById('btn');
 const messsage = document.getElementById('text');
 
 // ボタンをクリックしてから2秒(2000ミリ秒)に処理を実行する
-setTimeout(() => {
+clickBtn.addEventListener('click',() => {
 
+  setTimeout(() =>{
   // テキストを「ボタンをックリックしました」に書き換える
   messsage.textContent='ボタンをクリックしました';
-},2000);
+  },2000);
+
+});
